@@ -1,2 +1,17 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1 class="text-center">Admin Dashboard</h1>
+<br>
+
+<h2 class="text-center">Products Count: <%= @products %></h2>
+<div class="well">
+  <li class="list-group-item text-center"><%= link_to "Products", '/admin/products', class: 'alert-link' %>
+  </li>
+</div>
+<br>
+<h2 class="text-center">Categories: <%= @categories.count %></h2>
+  <div class="well">
+    <ul class="alert alert-primary" role="alert">
+      <% @categories.each do |category| %>
+      <li class="list-group-item text-center"><%= link_to category.name, category, class: 'alert-link' %></li>
+      <% end %>
+    </ul>
+  </div>
