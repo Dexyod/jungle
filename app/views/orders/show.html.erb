@@ -5,7 +5,8 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h4 class="text-center">Thank you for your order, <%= @order.email %>!</h4>
+    <h4 class="text-center">Thank you for your order!</h4>
+    <h5 class="text-center">A confirmation e-mail has been sent to <%= mail_to @order.email %></h5>
   <div class= "panel panel-default items">
 
   <table class="table table-bordered">
