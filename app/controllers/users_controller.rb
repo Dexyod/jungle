@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       redirect_to '/', notice: 'Account created successfully'
     else
       flash[:error] = 'An error occured!'
-      redirect_to 'new'
+      redirect_to '/signup'
     end
   end
 
