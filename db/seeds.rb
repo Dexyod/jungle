@@ -132,5 +132,72 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+## USERS
+puts 'Re-creating Users ...'
+User.destroy_all
+ 
+user1 = User.create!({
+  first_name: 'John',
+  last_name: 'Smith',
+  email: 'john@example.com',
+  password: '12345678',
+  password_confirmation: '12345678'
+})
+
+user2 = User.create!({
+  first_name: 'Jane',
+  last_name: 'Smith',
+  email: 'jane@example.com',
+  password: '12345678',
+  password_confirmation: '12345678'
+})
+
+## REVIEWS
+puts 'Re-creating Product Reviews ...'
+
+user1.reviews.create!({
+  product_id: 1,
+  description: Faker::Hipster.paragraph(1),
+  rating: rand(1...11)
+})
+
+user1.reviews.create!({
+  product_id: 1,
+  description: Faker::Hipster.paragraph(1),
+  rating: rand(1...11)
+})
+
+user1.reviews.create!({
+  product_id: 4,
+  description: Faker::Hipster.paragraph(1),
+  rating: rand(1...11)
+})
+
+user1.reviews.create!({
+  product_id: 6,
+  description: Faker::Hipster.paragraph(1),
+  rating: rand(1...11)
+})
+
+user2.reviews.create!({
+  product_id: 6,
+  description: Faker::Hipster.paragraph(1),
+  rating: rand(1...11)
+})
+
+user2.reviews.create!({
+  product_id: 9,
+  description: Faker::Hipster.paragraph(1),
+  rating: rand(1...11)
+})
+
+# SALES
+puts 'Re-creating Sales ...'
+
+sale1 = Sale.create! name: "March Break", starts_on: 30.days.ago, ends_on: 20.days.ago, percent_off: 15
+
+sale2 = Sale.create! name: "Right Now", starts_on: 30.days.ago, ends_on: 20.days.from_now, percent_off: 35
+
+
 
 puts "DONE!"

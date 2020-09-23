@@ -25,3 +25,62 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Screenshots
+
+ - landing page
+
+![main page](docs/Jungle-main.png)
+
+- sold out badge
+ 
+![login](docs/sold-out.png)
+
+- product show with no reviews
+ 
+![product show](docs/review-1.png)
+
+- product show with reviews
+ 
+![reviews](docs/review-2.png)
+
+- empty-cart
+ 
+![empty-cart](docs/empty-cart.png)
+
+- full-cart
+ 
+![full-cart](docs/full-cart.png)
+
+- post order email and screen
+ 
+![post order email and screen](docs/post-order-email.png)
+
+- Sign-up
+ 
+![sign-up](docs/sign-up.png)
+
+- Login
+ 
+![Login](docs/Login.png)
+
+- admin-sign-in
+ 
+![admin-sign-in](docs/admin-sign-in.png)
+
+- admin-dashboard
+ 
+![admin-dashboard](docs/admin-dashboard.png)
+
+- category-admin
+ 
+![category-admin](docs/category-admin.png)
+
+- sales-admin
+ 
+![sales](docs/sales.png)
+
+- products-admin
+ 
+![products-admin](docs/admin-products.png)
+
